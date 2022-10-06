@@ -1,0 +1,49 @@
+.resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 30%;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.resume-item header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+}
+
+.resume-item svg {
+    width: 30px;
+    height: 30px;
+}
+
+.resume-item .header-title p {
+    margin-block: 20px;
+    font-size: 25px;
+}
+
+.resume-item span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .resume-item {width: 20%;}
+
+    .resume-item p {
+        font-size: 12px;
+    }
+
+    .resume-item span {
+        font-size: 20px;
+    }
+
+    .resume-item svg {
+        display: none;
+    }
+}

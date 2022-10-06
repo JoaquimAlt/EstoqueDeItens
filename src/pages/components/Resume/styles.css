@@ -1,0 +1,8 @@
+.resume {
+    width: 935px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    margin-top: -55px;
+    justify-content: space-between;
+}

@@ -1,0 +1,61 @@
+.sidebar {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
+}
+
+.direitos {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+ul li {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 10px;
+}
+
+ul li div{
+    display: flex;
+    align-items: center;
+    color: darkcyan;
+}
+
+ul li div p{
+    visibility: hidden;
+}
+
+.sidebar:hover ul li div p{
+    margin-left: 10px;
+    visibility: visible;
+    transition: 200ms;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover .direitos {
+    display: flex;
+    width: 200px;
+    font-size: 12px;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: darkcyan;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}

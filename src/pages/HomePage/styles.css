@@ -1,0 +1,33 @@
+#home {
+    width: 100vw;
+    height: 100vh;
+    background: darkcyan;;
+}
+
+.image {
+    width: 100vw;
+}
+
+.image img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.8);
+}
+
+h1 {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+    font-size: 180px;
+    right: 50px;
+    color: #fff;
+    position: absolute;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}

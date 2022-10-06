@@ -1,0 +1,9 @@
+.tr-default td{
+    padding-block: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-left: 5px;
+}
