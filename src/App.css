@@ -17,6 +17,7 @@ p {
 }
 
 .container {
+    user-select: none;
     display: flex;
     gap: 50px;
     flex-direction: column-reverse;
@@ -80,7 +81,7 @@ table {
 .form-header {
     margin: 0;
     width: 100%;
-    background-color: darkcyan;
+    background-color: #2888FF;
 }
 
 .input-box {
