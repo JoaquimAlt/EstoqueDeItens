@@ -1,16 +1,24 @@
 import React from 'react';
+import HomeImg from "../../assets/home-img.svg"
+import Background from "../../assets/background.svg";
+import Button from '@mui/material/Button';
+import ArchiveIcon from '@mui/icons-material/Archive';
+import {NavLink} from "react-router-dom";
 import "./styles.css";
-import NavImg from "../../assets/nav-img.svg";
 
 const HomePage = () => {
     return (
         <body id='home'>
-            <div className='logo' >
-            <img src={NavImg} alt="" />
-            <h2>Logotipo</h2>
+            <div className='texts'>
+            <img src={HomeImg} alt="" />
+            <div className='logo'>.</div>
+            <div className='text'>
+                <p>Aqui você pode cadastrar os itens que desejar.</p>
+                <NavLink to="/cadastro"><Button className='button-home' variant="contained" color="primary">Cadastrar<ArchiveIcon/></Button></NavLink>
+            </div>
             </div>
             <div className='image'>
-                <img className='selected' src="https://www.verzani.com.br/wp-content/uploads/2020/04/controle-de-estoque.jpg" alt="" />
+                <img src={Background} alt="" />
             </div>
         </body>
     )
